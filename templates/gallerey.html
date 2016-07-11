@@ -1,0 +1,44 @@
+{% extends 'main.html' %}
+{% block content %}
+
+    {% include 'inc-my_menu.html' %}
+
+<div id="page-wrapper">
+    <div id="page" class="container">
+        <div class="title">
+            <h2>{{razdel_menu}}</h2>
+        </div>
+    </div>
+</div>
+
+<div id="wrapper">
+    <div id="three-column" class="container">
+        <div><span class="arrow-down"></span></div>
+
+
+
+
+{% load static %}
+
+
+
+    <div id="portfolio" class="container">
+    {% for image in gallereys %}
+        <div class="column">
+
+            <div class="box">
+
+                <a href="/static/img/{{image}}" target="_blank"><img src="/static/img/{{image}}" alt="" class="image image-full" /></a>
+                <h3>Информация об авторе</h3>
+                <p>Категория, и информация о фото.</p>
+
+                <a href="#" class="button button-small">Обсудить фото</a></div>
+
+    </div>
+        {% endfor %}
+</div>
+    </div>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% load static %}
+
+
+
+<div id="portfolio" class="container">
+    <div class="column">
+
+        <div class="box">
+            {% for image in gallereys %}
+            <a href="/"><img src="/static/img/{{image}}" alt="" class="image image-full"/></a>
+            <h3>Vestibulum venenatis</h3>
+            <p>Fermentum nibh augue praesent a lacus at urna congue rutrum.</p>
+            <a href="#" class="button button-small">Etiam posuere</a></div>
+        {% endfor %}
+    </div>
+</div>

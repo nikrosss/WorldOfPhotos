@@ -53,3 +53,9 @@ def login(request):
             return HttpResponseRedirect('/')
         else:
             return render(request, 'index.html',{'username': username, 'errors': True})
+
+
+def logout(request):
+    auth.logout(request)
+    # Перенаправление на страницу.
+    return HttpResponseRedirect("/")

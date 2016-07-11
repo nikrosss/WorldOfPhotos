@@ -24,4 +24,5 @@ urlpatterns = [
     url(r'^photograf/$', photograf),
     url(r'^contacts/$', contacts),
     url(r'^user/login/$', login),
+    url(r'user/logout/$', logout),
 ]

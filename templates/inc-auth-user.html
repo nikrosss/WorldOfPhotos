@@ -1,6 +1,6 @@
 {% load static %}
 
-<link rel="stylesheet" href="{% static 'style/auth.css' %}"/>
+<link rel="stylesheet" href="{% static 'style/auth.css' %}" xmlns="http://www.w3.org/1999/html"/>
 
 
 <div>
@@ -17,9 +17,12 @@
         </button>
     </form>
     {% else %}
-    <div class="form-5 clearfix">
-         <p>{{ user.username}}</p>
+
+    <div class="classname">
+        <h1>{{ user.username}}</h1>
+        <h3><a href="/user/logout/">Выход</a></h3>
     </div>
+
     {% endif %}
 
 </div>
